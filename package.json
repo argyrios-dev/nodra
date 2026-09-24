@@ -1,0 +1,22 @@
+{
+  "name": "nodra",
+  "version": "1.0.0",
+  "description": "Think fast. Build the network. A local-first knowledge survival game.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4173",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "test": "node --experimental-strip-types --test tests/engine.test.ts",
+    "format": "prettier --write src tests docs README.md index.html vite.config.ts tsconfig.json .github/workflows"
+  },
+  "keywords": [],
+  "author": "argyrios-dev",
+  "license": "UNLICENSED",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}
